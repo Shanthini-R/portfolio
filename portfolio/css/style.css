@@ -1,0 +1,429 @@
+*{
+    font-variant: small-caps;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #555555;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 235px 20px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-text h1 {
+    margin: 0;
+   
+}
+
+.header-text p {
+    margin: 10px 0 0;
+}
+
+.header-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.animate-up {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideRight 1s ease forwards;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-left {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: slideLeft 1s ease forwards;
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+nav {
+    background-color:#fffffffc;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #333;
+    padding: 14px 20px ;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555555;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    padding: 20px ;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 170px 0 0 0 ;
+    margin: 0;
+}
+
+footer {
+    background-color: #555555;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius:90px 5px 90px 5px  ;
+  }
+  
+  .image {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .image-container:hover .image {
+    transform: scale(1.1);
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container.clicked .image {
+    border: 3px solid #ff6347;
+  }
+  
+  /* progress */
+
+  .progress-container {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    position: relative;
+    border-radius: 100px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #555555;
+    width: 0;
+    border: 2px solid #555555;
+    transition: width 1s ease;
+  }
+  
+  .progress-text {
+    margin-top: 10px;
+  }
+
+  /* table */
+  .qualifications-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .qualifications-container:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #555555;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: center;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #cap{
+    text-align: center;
+    color: white;
+
+  }
+  .colo{
+    color: #ffffff;
+  }
+/* form */
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .feedback-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .feedback-rating input[type="radio"] {
+    display: none;
+  }
+  
+  .feedback-rating label {
+    color: #555555;
+    cursor: pointer;
+  }
+  
+  .feedback-rating label:hover,
+  .feedback-rating input[type="radio"]:checked ~ label {
+    color: #ffcc00; /* Change color on hover or when checked */
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #555555;
+    text-decoration: none;
+  }
+  .social-icons a:hover{
+    font-size: 30px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555555;
+    color: #fff;
+  }
+
+
+  /* LIST OF SKILLS
+   */
+
+  .colorr li a {
+    text-decoration: none;
+    color: white;
+   
+  }
+  .colorr li a:hover {
+    font-style: italic;
+    }
+  
+    /* mediaqueery */
+
+    /* Media Queries for responsiveness */
+@media (max-width: 992px) {
+  .header-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .header-text {
+      flex: none;
+      margin-bottom: 20px;
+  }
+  .image-container {
+      flex: none;
+  }
+  nav a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+      padding: 0 10px;
+  }
+  .header-text h1 {
+      font-size: 1.8em;
+  }
+  .header-text p {
+      font-size: 1.2em;
+  }
+  .container {
+      padding: 10px;
+  }
+  nav {
+      padding: 5px 0;
+  }
+  nav a {
+      padding: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-text h1 {
+      font-size: 1.5em;
+  }
+  .header-text p {
+      font-size: 1em;
+  }
+  .image {
+      max-width: 80%;
+  }
+  nav a {
+      padding: 8px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-text h1 {
+      font-size: 1.2em;
+  }
+  .header-text p {
+      font-size: 0.9em;
+  }
+  .image {
+      max-width: 70%;
+  }
+}
